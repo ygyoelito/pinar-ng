@@ -1,0 +1,15 @@
+<p>Heroes List</p>
+
+<h3 *ngIf="randomDeleted; else NothingToDelete">
+  Bye {{ randomDeleted }}. We miss you!
+</h3>
+
+<ng-template #NothingToDelete>
+    <h4>Nothing has been eliminated</h4>
+</ng-template>
+
+<button (click)="deleteRandomHero()">Delete Random Heroe</button>
+
+<ul>
+  <li *ngFor="let heroe of heroes; let i = index">{{ i + 1 }}. {{ heroe }}</li>
+</ul>
