@@ -6,7 +6,7 @@ import { ListComponent } from './listado/list.component';
 
 @NgModule({
   declarations: [HeroeComponent, ListComponent],
-  exports: [ListComponent],
+  exports: [HeroeComponent, ListComponent],
   imports: [
     CommonModule
   ]

@@ -1,0 +1,16 @@
+<h1>Dragon Ball Z</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <!-- <app-characters [characters]="characters"></app-characters> -->
+    <app-characters [data]="charactersR"></app-characters> <!--another way, characters.component.ts -->
+  </div>
+
+  <div class="col">
+    <app-add-char
+      [newPjX]="newPjR"
+      (onNewCharacter)="addNewCharacter( $event )"
+    ></app-add-char>    
+  </div>
+</div>
