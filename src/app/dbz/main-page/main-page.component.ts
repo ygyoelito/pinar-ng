@@ -7,23 +7,10 @@ import { Character } from '../interfaces/dbz.interface';
   styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent {
-  charactersR: Character[] = [
-    {
-      name: 'Goku',
-      ability: 15000,
-    },
-    {
-      name: 'Vegeta',
-      ability: 7500,
-    },
-  ];
 
-  newPjR: Character = {
+  newPj: Character = {
     name: '',
     ability: 0,
   };
 
-  addNewCharacter(arg: Character) {
-    this.charactersR.push(arg);    
-  }
 }

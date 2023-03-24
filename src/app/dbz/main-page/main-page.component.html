@@ -3,14 +3,10 @@
 
 <div class="row">
   <div class="col">
-    <!-- <app-characters [characters]="characters"></app-characters> -->
-    <app-characters [data]="charactersR"></app-characters> <!--another way, characters.component.ts -->
+    <app-characters></app-characters>
   </div>
 
   <div class="col">
-    <app-add-char
-      [newPjX]="newPjR"
-      (onNewCharacter)="addNewCharacter( $event )"
-    ></app-add-char>    
+    <app-add-char [newPj]="newPj"></app-add-char>
   </div>
 </div>

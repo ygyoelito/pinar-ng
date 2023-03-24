@@ -1,18 +1,18 @@
 <h3>
-  Add: <small> {{ newPjX.name }} </small>
+  Add: <small> {{ newPj.name }} </small>
 </h3>
 <hr />
 <form (ngSubmit)="add()">
   <input 
     placeholder="Name" 
     type="text" name="name" 
-    [(ngModel)]="newPjX.name" 
+    [(ngModel)]="newPj.name" 
   />
   <input
     placeholder="Ability"
     type="number"
     name="ability"
-    [(ngModel)]="newPjX.ability"
+    [(ngModel)]="newPj.ability"
   />
   <button type="submit">Agregar</button>
 </form>
