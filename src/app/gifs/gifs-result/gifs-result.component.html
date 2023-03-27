@@ -1,0 +1,17 @@
+<div class="row">
+  <div *ngFor="let gif of results" class="col-md-4 col-sm-6">
+    <div class="card animate__animated animate__fadeIn">
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <h5 class="card-title fw-bold">
+          {{ gif.title | titlecase}}
+        </h5>
+        <!-- <p class="card-text">ID: {{ gif.id }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
